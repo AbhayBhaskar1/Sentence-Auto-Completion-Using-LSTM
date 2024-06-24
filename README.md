@@ -1,10 +1,10 @@
-# Sentence-Auto-Completion-Using-LSTM-Deep-Learning
+# Sentence-Auto-Completion-Using-LSTM
 
 # Dataset Link:
 
 https://www.kaggle.com/datasets/noorsaeed/holmes
 
-In this blog post, we will explore the implementation of a Sentence Auto-Completion system using LSTM (Long Short-Term Memory) deep learning architecture. The goal of this project is to build a model capable of predicting the completion of a given input sentence, based on the patterns and context learned from a dataset, specifically the "holmes.txt" data containing texts from Sherlock Holmes stories.
+In this project, we will explore the implementation of a Sentence Auto-Completion system using LSTM (Long Short-Term Memory) deep learning architecture. The goal of this project is to build a model capable of predicting the completion of a given input sentence, based on the patterns and context learned from a dataset, specifically the "holmes.txt" data containing texts from Sherlock Holmes stories.
 
 # Introduction
 
