@@ -25,15 +25,21 @@ def autoCompletions(text, model, tokenizer, max_sequence_len):
             break
     return text + ' ' + predicted_word
 
-# Streamlit UI
 st.title('Shakespeare Text Autocompletion')
 
-input_text = st.text_input('Enter a starting phrase:', 'I love')
+input_text = st.text_input('Enter a starting phrase:')
+
+num_sentences = st.slider('Number of Words to generate:', 1,2,3)
 
 if st.button('Complete Text'):
     generated_text = input_text
-    for _ in range(5):  # Change the number of words to generate
-        generated_text = autoCompletions(generated_text, model, tokenizer, max_sequence_len=len(generated_text.split())+1)
+    for _ in range(num_sentences):
+        # Split the generated text to avoid repeating the same word
+        generated_words = generated_text.split()
+        if len(generated_words) > 1 and generated_words[-1] == generated_words[-2]:
+            generated_text += ' ' + autoCompletions(generated_text, model, tokenizer, max_sequence_len=len(generated_words)+1)
+        else:
+            generated_text = autoCompletions(generated_text, model, tokenizer, max_sequence_len=len(generated_words)+1)
     st.success(generated_text)
 
 st.sidebar.header('About')
