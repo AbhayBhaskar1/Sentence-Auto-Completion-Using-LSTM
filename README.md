@@ -2,9 +2,9 @@
 
 # Dataset Link:
 
-https://www.kaggle.com/datasets/noorsaeed/holmes
+https://www.kaggle.com/datasets/kingburrito666/shakespeare-plays/data
 
-In this project, we will explore the implementation of a Sentence Auto-Completion system using LSTM (Long Short-Term Memory) deep learning architecture. The goal of this project is to build a model capable of predicting the completion of a given input sentence, based on the patterns and context learned from a dataset, specifically the "holmes.txt" data containing texts from Sherlock Holmes stories.
+In this project, we will explore the implementation of a Sentence Auto-Completion system using LSTM (Long Short-Term Memory) deep learning architecture. The goal of this project is to build a model capable of predicting the completion of a given input sentence, based on the patterns and context learned from the "Shakespeare.txt" dataset, containing texts from the works of William Shakespeare.
 
 # Introduction
 
@@ -16,7 +16,7 @@ Sentence auto-completion systems have gained significant attention in recent yea
 The project involves several key steps:
 
 
-Data Collection: Obtain the dataset containing text data. In this case, we'll be using text from Sherlock Holmes stories, sourced from the "holmes.txt" file.
+Data Collection: Obtain the dataset containing text data. In this case, we'll be using text from Shakespeare's works, sourced from the "shakespeare.txt" file.
 
 
 Data Preprocessing: Prepare the text data for model training by performing various preprocessing steps, including tokenization, sequence generation, and feature engineering.
